@@ -1,0 +1,697 @@
+  .defier-block-box {
+    box-shadow: 0 0 0px 0;
+    margin: 0px 0 20px;
+    padding: 0px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .highlights-full {
+      padding: 0;
+      margin-bottom:25px;
+    ul.halfTohalf {
+      li.defier-first-post {
+        padding-#{$right}: 15px !important;
+        @include phone {
+          padding: 0 !important;
+        }
+        @include tablet {
+          padding: 0 !important;
+        }
+        .slidertwoWarpper {
+          height: 490px !important;
+              img {
+                position: relative;
+                display: block;
+                min-height: inherit;
+                max-width: initial;
+                opacity: 1;
+                width: auto;
+                height: 490px;
+                margin: 0 auto;
+                left:0;
+                right:0;
+                @include tablet {
+                left:0;
+                right:0;
+                }
+              }
+          h2 {
+            font-size: 270%;
+          }
+        }
+      }
+      li {
+        width: 50% !important;
+        @include phone{
+          width: 100% !important;
+          padding:0;
+        }
+        @include tablet {
+          width: 100% !important;
+          padding:0;
+        }
+      }
+    }
+
+    ul.defier-posts-list {
+      margin: 0;
+      list-style: outside none none;
+      li.defier-first-post {
+        border-bottom: 1px solid #f1f1f1;
+        border-top: 0px;
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 100%;
+        @include phone {
+          height: auto !important;
+        }
+                @include tablet {
+          height: auto !important;
+        }
+        .miHeight {
+          height: 230px !important;
+
+        }
+        figure.effect-thumbDefier {
+
+          time {
+            top: 5%;
+          }
+          h2 a {
+            text-align: center;
+          }
+          p {
+            font-size: 75%;
+                bottom: 20px;
+                a.readMore {
+                  bottom: -15px;
+                }
+            @include phone {
+                  margin: 0 0 5px 0;
+            }
+            @include tablet {
+                  margin: 0 0 5px 0;
+            }
+          }
+          .data-label {
+            width: 100%;
+          }
+        }
+        &:first-child {
+          border: 0;
+        }
+      }
+      /*---------------*/
+      /***** list  *****/
+      /*---------------*/
+      li.grid {
+        margin: 0;
+        border: 0;
+        display: block;
+        float: $left;
+        height: 90px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+/*        border-bottom: 1px solid #ededed; */
+        &:last-child {
+          border-bottom: 0px solid #ededed;
+          margin-bottom: 0px;
+        }
+      figure.def-list-post {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        float: $left;
+        max-width: 100%;
+        position: relative;
+        height: 100%;
+        img {
+          position: absolute;
+          width: 35%;
+          @include left(0);
+          @include right(auto);
+          top: 0%;
+          bottom: 0;
+          @include transition(all 0.5s ease);
+          @include phone {
+            width: 50%;
+          }
+          @include tablet {
+            width: 50%;
+          }
+        }
+        figcaption {
+          text-align: $left;
+          position: relative;
+          width: 65%;
+          float: $right;
+          @include padding(0 10px 0 15px);
+          z-index: 99;
+          @include transition(all 0.5s ease);
+        }
+        h4 {
+          position: relative;
+          overflow: hidden;
+          padding: 0;
+          float: $left;
+          @include margin(3px 0);
+              font-size: 85%;
+          line-height: 135%;
+          text-transform: initial;
+          a {
+            @include phone {
+            font-size: 100%;
+            }
+                      @include tablet {
+                    font-size: 110%;
+    line-height: 150%;
+            }
+          }
+          &:after {
+
+          }
+        }
+        p {
+          position: relative;
+          overflow: hidden;
+          padding: 0;
+          @include transition(all 0.5s ease);
+          opacity: 1;
+          float: $left;
+          font-size: 60%;
+          z-index: 999999999999;
+          i {
+            margin-#{$right}:5px;
+            margin-#{$left}:auto;
+          }
+           @include phone {
+                    p {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            @include transition(all 0.5s ease);
+          }
+        }
+        }
+        &:hover {
+          figcaption {
+            position: absolute;
+            width:100%;
+            @include right(0);
+            @include left(0);
+            @include padding(0 10px 0 15px);
+            z-index: 999;
+            @include transition(all 0.5s ease);
+          }
+          img {
+            max-width: none;
+            width: -webkit-calc(100% + 20px);
+            width: calc(100% + 20px);
+            opacity: 0.7;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0px,0,0);
+            transform: translate3d(0px,0,0);
+          }
+          h4 {
+            text-align: center;
+            font-size: 110%;
+            margin: 8px 0;
+
+          }
+          p {
+            opacity: 0;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            @include transition(all 0.5s ease);
+          }
+
+        }
+      }
+
+      }
+
+
+
+
+    }
+    }
+  }
+
+
+.defier-cat-title {
+  float: $left;
+  position: relative;
+  width: 100%;
+  border: 0px;
+  display: inline-block;
+  height: 44px;
+  margin-bottom: 10px;
+  &:before {
+    position: absolute;
+    top: 18px;
+    @include left(0);
+    @include right(0);
+    height: 2px;
+    content: "";
+  }
+  h4.widget-title {
+    margin:0;
+    font-size: 140%;
+    font-weight: normal;
+    text-transform: capitalize;
+    position: absolute;
+    @include padding-right(15px);
+    @include padding-left(25px);
+    @include left(0);
+    @include right(auto);
+    line-height: 33px;
+    float: $left;
+    position: relative;
+    &:first-letter {
+      font-weight: 800;
+    }
+  }
+  .lavecat {
+    font-size: 60%;
+    position: absolute;
+    @include left(0);
+    float: $left;
+    width: 8px;
+    height: 8px;
+    margin: 13px 6px;
+    z-index: 99;
+  }
+}
+
+
+.Carousel {
+  margin: 0px -15px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  .defier-cat-title {
+    position: absolute;
+    z-index: 9999;
+    border: 0px;
+    #{$left}:0;
+    height: 44px;
+    float: none;
+    margin-#{$left}: 2%;
+    &:before {
+      position: absolute;
+      top: 18px;
+      @include left(0);
+      @include right(0);
+      height: 2px;
+      display: none;
+    }
+    p{
+      a {
+        margin: 5em 0;
+      }
+    }
+    h4.widget-title {
+      font-size: 125%;
+      font-weight: normal;
+      text-transform: capitalize;
+      position: absolute;
+      margin-#{$left}:2%;
+      padding-#{$right}:15px;
+      padding-#{$left}:30px;
+      margin-#{$right}:auto;
+      padding-bottom: 5px;
+      @include left(0);
+      @include right(auto);
+      line-height: 25px;
+      float: $left;
+      position: relative;
+      &:first-letter {
+        font-weight: 800;
+      }
+    }
+    .lavecat {
+      font-size: 60%;
+      position: absolute;
+      @include left(0);
+      float: $left;
+      width: 8px;
+      height: 8px;
+      margin: 10px 13px;
+      z-index: 99;
+    }
+  }
+
+
+  figure.effect-thumbDefier2 {
+    height: 260px !important;
+    .catLabel {
+      position: relative;
+      overflow: hidden;
+      z-index: 150000;
+      top: 10%;
+      z-index: 99;
+      float: $left;
+      @include left(5%);
+      padding: 0 5px;
+      @include border-radius(3px);
+      left: 5%;
+      a {
+        z-index: 1;
+      }
+      .lavecat {
+        font-size: 60%;
+        position: absolute;
+        @include left(0);
+        float: $left;
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+        @include transition(all 0.2s ease);
+        z-index: 99;
+      }
+      a {
+        float: $left;
+        @include transition(all 0.2s ease);
+        font-size: 101%;
+        font-weight: lighter;
+        text-transform: capitalize;
+        @include padding-left(20px);
+        z-index: 20000001;
+        &::first-letter {
+          font-weight: bold;
+        }
+      }
+
+    }
+    .meta-label {
+      padding: 15px;
+      top:10%;
+      width: 93%;
+      z-index: 9999999;
+      float: $left;
+      position: absolute;
+      display: block;
+      @include left(3%);
+      opacity: 0;
+      @include transform(translate3d(0,10px,0));
+      @include transition(all 0.35s);
+      .pull-left  , .pull-right{
+        font-size: 65%;
+        i {
+          font-size: 120%;
+          margin-#{$right}:10px;
+          margin-#{$left}:auto;
+          float: $left;
+        }
+      }
+
+    }
+    h2 {
+      a {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        padding-#{$right}:5%;
+        padding-#{$left}:10%;
+        line-height: 150%;
+        text-align: $left;
+        @include transform(translate3d(0,-20%,0));
+        @include transition(all 0.35s);
+        text-transform: capitalize;
+         font-size: 80%;
+        .verticalLine {
+          position: absolute;
+          @include left(5%);
+          top: 0;
+          bottom: 0px;
+          width: 4px;
+
+
+        }
+      }
+
+    }
+    p {
+      position: absolute;
+      top: 60px;
+      margin-top: 20px;
+      border-top:2px solid rgba(255,255,255,0.1);
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      @include transform(translate3d(0,0,0));
+      @include transition(all 0.35s);
+      text-transform: capitalize;
+      text-transform: initial;
+      text-align: justify;
+      font-size: 80%;
+      padding: 2em 10%;
+      i {
+        margin-#{$left}:10px;
+      }
+      @include phone {
+        padding: 1.5em;
+
+      }
+      a {
+        width: 100%;
+        text-align: $right;
+        margin: 0.5em 0;
+        float: $left;
+        font-size: 100%;
+        text-transform: uppercase;
+        i {
+          margin-#{$right}:10px;
+          margin-#{$left}:auto;
+          font-size: 110%;
+          line-height: 1.2;
+        }
+      }
+    }
+    time {
+      top: 20%;
+      z-index: 999999999999999999999999999999999;
+      float: $right;
+      position: absolute;
+      display: block;
+      @include right(5%);
+      opacity: 0;
+      @include transform(translate3d(0,0,0));
+      @include transition(all 0.35s);
+      i {
+        font-size: 120%;
+        margin-#{$right}:10px;
+        margin-#{$left}:auto;
+      }
+
+    }
+    figcaption {
+
+      &:before {
+        position: absolute;
+        top: 0;
+        @include left(0);
+        width: 100%;
+        height: 100%;
+        content: '';
+        @include transition(all 0.35s);
+        @include phone {
+          position: absolute;
+          top: 0;
+          @include left(0);
+          width: 100%;
+          height: 100%;
+          content: '';
+          @include transition(all 0.35s);
+        }
+        @include tablet {
+          position: absolute;
+          top: 0;
+          @include left(0);
+          width: 100%;
+          height: 100%;
+          content: '';
+          @include transition(all 0.35s);
+        }
+      }
+    }
+
+    &:hover {
+      .catLabel {
+        position: relative;
+        overflow: hidden;
+        top: 10%;
+        float: $left;
+        @include left(5%);
+        padding: 0 5px;
+        @include border-radius(3px);
+        #{$left}: 5%;
+        a {
+          z-index: 1;
+        }
+        .lavecat {
+          position: absolute;
+          @include transform(scale(100%,100%));
+          font-size: 60%;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+          margin: 0;
+          height: auto;
+          @include transition(all 0.2s ease);
+          @include border-radius(3px);
+          width: 100%;
+
+        }
+        a {
+          float: $left;
+          font-size: 100%;
+          font-weight: lighter;
+          text-transform: capitalize;
+          @include transition(all 0.2s ease);
+          @include padding-left(0px);
+        }
+
+      }
+
+      h2 {
+        a {
+          opacity: 0;
+          @include transform(translate3d(0,-50%,0) translate3d(0,-40px,0));
+        }
+      }
+      .meta-label {
+        opacity: 1;
+        @include transform(translate3d(0,0,0));
+      }
+      figcaption {
+        &:before {
+          opacity: 1;
+          @include transform(translate3d(0,0,0));
+          top:0
+        }
+      }
+      p {
+        opacity: 1;
+        @include transform(translate3d(0,0,0));
+        @include phone {
+          padding: 1.5em;
+        }
+        a {
+          width: 100%;
+          text-align: $right;
+          margin:0.5em 0;
+        }
+      }
+      time {
+        opacity: 1;
+        @include transform(translate3d(0,0,0));
+      }
+    }
+  }
+}
+
+
+  .widget {
+    box-shadow: 0 0 0px 0;
+    margin: 0 ;
+    padding: 0;
+  }
+
+
+
+
+
+
+.def_col_4 {
+    width: 100%;
+    li {
+        float: $left;
+        width: 33.33333333%;
+        border-bottom: 0px;
+        margin: 0;
+        padding: 0px !important;
+        height: 80px;
+        overflow: hidden;
+        border: 2px solid #fff !important;
+        a {
+            display: block;
+            img {
+                position: relative;
+                width: 270%;
+                height: 85px;
+                opacity: 0.7;
+                @include transition(all 0.3s);
+                                @include tablet {
+                        height: 175px !important;
+                }
+                &:hover {
+                    opacity: 1;
+                    @include transition(all 0.3s);
+                }
+            }
+        }
+    }
+}
+
+
+.widget-tab {
+
+  ul {
+    li.cat-item {
+      height: auto;
+      position: relative;
+      float: $left;
+      width: 100%;
+      border: 0;
+      margin-bottom: 6px;
+      padding: 8px;
+      @include transition(all 0.3s);
+      text-align: $right;
+      a {
+        text-align: $left;
+            float: $left;
+      }
+      &:hover {
+        @include transition(all 0.3s);
+        a {
+          margin-#{$left}:12%;
+          margin-#{$right}:auto;
+        }
+      }
+      &:before {
+        content: "";
+        margin-#{$right}: 10px;
+        margin-#{$left}: 0px;
+        position: absolute;
+        @include left(0);
+        top:0;
+        bottom:0;
+        width: 5%;
+      }
+      a {
+        margin-#{$left}:12%;
+        margin-#{$right}:auto;
+      }
+    }
+  }
+}
+
+.widget-tab li {
+    height: 100%;
+    list-style: none none;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+.slidingMenu {
+  @include phone {
+    display: inline-block;
+    float: $left;
+  }
+}

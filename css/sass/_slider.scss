@@ -1,0 +1,934 @@
+// owl carusel
+
+/* Arrows */
+.fa-arrow-left2,
+.fa-arrow-right2
+{
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.fa-arrow-left2:hover,
+.fa-arrow-left2:focus,
+.fa-arrow-right2:hover,
+.fa-arrow-right2:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.fa-arrow-left2:hover:before,
+.fa-arrow-left2:focus:before,
+.fa-arrow-right2:hover:before,
+.fa-arrow-right2:focus:before
+{
+    opacity: 1;
+}
+.fa-arrow-left2.slick-disabled:before,
+.fa-arrow-right2.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.fa-arrow-left2:before,
+.fa-arrow-right2:before
+{
+
+}
+
+.fa-arrow-left2
+{
+    left: -25px;
+}
+[dir='rtl'] .fa-arrow-left2
+{
+    right: -25px;
+    left: auto;
+}
+.fa-arrow-left2:before
+{
+    content: "\e094" ;
+}
+[dir='rtl'] .fa-arrow-left2:before
+{
+    content: "\e094" ;
+}
+
+.fa-arrow-right2
+{
+    right: -25px;
+}
+[dir='rtl'] .fa-arrow-right2
+{
+    right: auto;
+    left: -25px;
+}
+.fa-arrow-right2:before
+{
+    content: "\e095";
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    @include phone {
+        width:100% !important;
+            top: 110px;
+            right: 0 !important;
+            li {
+                padding: 0 0 !important;
+                float:none !important;
+
+            }
+    }
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #ededed;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+
+
+// slider one
+
+
+.grid {
+    background: transparent;
+figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 1.0;
+    width: 100%;
+}
+}
+.featured-wrapper {
+    padding: 0px 0;
+    float: $left;
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
+    .featured-post {
+        padding:0;
+    }
+
+    @include phone {
+        padding:0;
+    }
+    .defier-slider-one {
+    height: 200px;
+    margin-bottom: 0;
+}
+      .defier-slider-two {
+          height: 200px;
+      }
+    .highlights {
+    display: inline-block;
+    padding: 0;
+        height: 470px;
+    float: $left;
+        overflow: hidden;
+    width: 100%;
+    .sliderSlickOne  {
+        z-index: 99;
+            height: 470px;
+        position: relative;
+        overflow: hidden;
+                  figure {
+                border-radius: 0;
+                height: 470px !important;
+            }
+         .slick-list {
+      width: 100%;
+      float: right;
+      height: 470px;
+      display: block;
+      .slick-slide {
+          float: $left;
+          figure {
+                border-radius: 0;
+                height: 470px !important;
+            }
+      }
+
+    }
+              .slick-dots {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    z-index: 99999;
+    top: 37%;
+    #{$right}:1.5%;
+    float: $right;
+    width: 20px;
+    @include phone {
+        top:10px;
+        height: 30px;
+    }
+
+    li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    float: $right;
+    button {
+    font-size: 0;
+    line-height: 0;
+    display: inline;
+    width: 3px;
+    height: 3px;
+    padding: 3px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    @include transition("all 0.3s");
+}
+}
+li.slick-active {
+    button {
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    @include transition("all 0.3s");
+    background: $color-def-two;
+}
+
+
+}
+}
+    }
+
+}
+}
+
+
+
+
+
+/*------------------------*/
+/***** thumbDefier *****/
+/*-----------------------*/
+figure.small-thumbDefier {
+        h2 {
+        a {
+            	position: absolute;
+                top: 75%;
+                left: 0;
+                font-size: 80% ;
+                width: 100%;
+                color: #fff;
+                padding: 0 5%;
+                text-align: $left;
+                @include transform(translate3d(0,-50%,0));
+                @include transition(all 0.35s);
+                text-transform: lowercase;
+                line-height: 26px;
+                  @include tablet {
+                    font-size: 60% !important;
+                  }
+        }
+
+    }
+    p {
+            font-size: 66% !important;
+            padding: 2em 5% !important;
+            color: #ccc !important;
+    }
+
+
+}
+
+.featured-wrapper {
+    figure.small-thumbDefier {
+            @include tablet {
+        width: 100%;
+    display: inline-block;
+    float: $left;
+    }
+    h2 {
+        a {
+                        @include tablet {
+              font-size:100%;
+                    }
+        }
+
+    }
+
+         }
+
+}
+
+ul.defier-posts-list li.defier-first-post figure.effect-thumbDefier h2 a {
+                                   @include tablet {
+              font-size:100% !important;
+                    }
+}
+
+figure.effect-thumbDefier {
+    @include box-shadow(0 0 70px 30px $color-def-one-rgba inset);
+    .catLabel {
+     color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 150000;
+    top: 10%;
+    z-index: 99;
+    float: $left;
+            @include left(5%);
+                padding: 0 5px;
+                @include border-radius(3px);
+            left: 5%;
+            a {
+                z-index: 1;
+            }
+            .lavecat {
+            font-size: 60%;
+            position: absolute;
+            @include left(0);
+                float: $left;
+                width: 10px;
+                height: 10px;
+                margin: 8px;
+                 @include transition(all 0.2s ease);
+                 z-index: 20000000;
+            }
+            a {
+                     float: $left;
+                    color: #fff;
+                    @include transition(all 0.2s ease);
+                    font-size: 101%;
+                    font-weight: lighter;
+                    text-transform: capitalize;
+                    @include padding-left(20px);
+                    z-index: 20000001;
+                    &::first-letter {
+                        font-weight: bold;
+                    }
+            }
+
+    }
+    h2 {
+        a {
+            	position: absolute;
+                top: 55%;
+                left: 0;
+                font-size: 90%;
+                width: 100%;
+                color: #fff;
+                padding: 0 5%;
+                line-height: 150%;
+                text-align: $left;
+                @include transform(translate3d(0,-50%,0));
+                @include transition(all 0.35s);
+                text-transform: capitalize;
+
+        }
+
+    }
+    p {
+        	position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            @include transform(translate3d(0,10px,0));
+            @include transition(all 0.35s);
+            text-transform: capitalize;
+                text-transform: initial;
+                text-align: justify;
+                font-size: 75%;
+                    padding: 2em 5%;
+                                        i {
+                            margin-#{$right}:10px;
+                            margin-#{$left}:auto;
+                            line-height: 1.5;
+                        }
+                @include phone {
+                        padding: 1.5em;
+
+                }
+                a {
+                        width: 100%;
+                        text-align: $right;
+                        margin: 0.5em 0;
+                        color: #fff;
+                        float: $left;
+                        font-size: 100%;
+                        text-transform: uppercase;
+                        i {
+                          margin-#{$right}:10px;
+                          margin-#{$left}:auto;
+                            font-size: 110%;
+                            color:$color-def-two;
+                        }
+                }
+    }
+    .meta-label {
+    color: #fff;
+    top: 15%;
+    left:0;
+    right:0;
+    padding:0 10%;
+    z-index: 999999;
+    float: $left;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    @include transform(translate3d(0,10px,0));
+    @include transition(all 0.35s);
+                .pull-left  , .pull-right{
+      font-size: 65%;
+      line-height: 1;
+      color:$color-def-three;
+      text-transform: capitalize;
+      i {
+        font-size: 120%;
+        margin-#{$right}:10px;
+        margin-#{$left}:auto;
+        float: $left;
+      }
+    }
+
+    }
+
+    figcaption {
+
+        &:before {
+          	position: absolute;
+            top: 0;
+            @include left(0);
+            width: 100%;
+            height: 100%;
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0.0) 0%, $color-def-one-rgba 40%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0.0) 0%, $color-def-one-rgba 40%);
+            content: '';
+            opacity: 0.5;
+            @include transform(translate3d(0,50%,0));
+            @include transition(all 0.35s);
+        }
+    }
+    @include phone {
+
+          .catLabel {
+     color: #fff;
+    position: relative;
+    overflow: hidden;
+    top: 10%;
+    float: $left;
+            @include left(5%);
+                padding: 0 5px;
+                @include border-radius(3px);
+            left: 5%;
+            a {
+                z-index: 1;
+            }
+          .lavecat {
+                position: absolute;
+                @include transform(scale(100%,100%));
+                font-size: 60%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                margin: 0;
+                height: auto;
+                 @include transition(all 0.2s ease);
+                @include border-radius(3px);
+                width: 100%;
+
+            }
+            a {
+                     float: $left;
+                    color: #fff;
+                    font-size: 101%;
+                    font-weight: lighter;
+                    text-transform: capitalize;
+                    @include transition(all 0.2s ease);
+                    @include padding-left(0px);
+            }
+
+    }
+
+        h2 {
+            a {
+                	color: #fff;
+                    @include transform(translate3d(0,-50%,0) translate3d(0,-75px,0));
+            }
+        }
+        figcaption {
+            &:before {
+                	opacity: 1;
+                    @include transform(translate3d(0,0,0));
+                                        background: -webkit-linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    background: -o-linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    background: linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    top:0
+            }
+        }
+        p {
+                                        opacity: 1;
+                            @include transform(translate3d(0,0,0));
+                @include phone {
+                        padding: 1.5em;
+                }
+                a {
+                    width: 100%;
+                    text-align: $right;
+                    margin:0.5em 0;
+                    color: #fff;
+                }
+                }
+                    time {
+                        opacity: 1;
+                        @include transform(translate3d(0,0,0));
+                        }
+    }
+
+    &:hover {
+          .catLabel {
+     color: #fff;
+    position: relative;
+    overflow: hidden;
+    top: 10%;
+    float: $left;
+            @include left(5%);
+                padding: 0 5px;
+                @include border-radius(3px);
+            left: 5%;
+            a {
+                z-index: 1;
+            }
+          .lavecat {
+                position: absolute;
+                @include transform(scale(100%,100%));
+                font-size: 60%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                margin: 0;
+                height: auto;
+                 @include transition(all 0.2s ease);
+                @include border-radius(3px);
+                width: 100%;
+
+            }
+            a {
+                     float: $left;
+                    color: #fff;
+                    font-size: 101%;
+                    font-weight: lighter;
+                    text-transform: capitalize;
+                    @include transition(all 0.2s ease);
+                    @include padding-left(0px);
+            }
+
+    }
+
+        h2 {
+            a {
+                	color: #fff;
+                    @include transform(translate3d(0,-50%,0) translate3d(0,-40px,0));
+            }
+        }
+
+        figcaption {
+            &:before {
+                	opacity: 1;
+                    @include transform(translate3d(0,0,0));
+                                        background: -webkit-linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    background: -o-linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    background: linear-gradient(rgba(255,255,255,0.0) 0%, $color-def-one-rgba 75%);
+                    top:0
+            }
+        }
+        p {
+                                        opacity: 1;
+                            @include transform(translate3d(0,0,0));
+                @include phone {
+                        padding: 1.5em;
+                }
+                a {
+                    width: 100%;
+                    text-align: $right;
+                    margin:0.5em 0;
+                    color: #fff;
+                }
+                }
+                    time {
+                        opacity: 1;
+                        @include transform(translate3d(0,0,0));
+                        }
+                    .meta-label {
+                      opacity: 1;
+                      @include transform(translate3d(0,0,0));
+                    }
+    }
+}
+
+
+
+
+
+.grid figure img {
+    @include phone {
+            min-height: 50%;
+    max-width: 160%;
+    }
+}
+
+
+
+
+
+//// slider v3
+
+.Carousel {
+
+    #SliderCaurasel {
+    position: relative;
+            .grid figure img {
+    position: absolute;
+    display: block;
+    opacity: 1.0;
+    width: 180%;
+    max-width: 270%;
+    left: -51%;
+            }
+    .slick-arrow {
+        position: absolute;
+        top: 26vh;
+        box-shadow: 0 0 0;
+        padding: 2%;
+        margin: 0;
+        opacity: 0.5;
+        @include transition(all 0.3s ease);
+        &:hover {
+            opacity: 1;
+            @include transition(all 0.3s ease);
+
+        }
+    }
+    .fa-arrow-right2 {
+
+         @include right(0px);
+         display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+&:before {
+    content: "\e095";
+font-family: inherit;
+font-size: 250%;
+padding: 33%;
+}
+        }
+
+    .fa-arrow-left2 {
+
+         @include left(-10px);
+         display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        z-index: 9999;
+
+&:before {
+    content: "\e094";
+font-family: inherit;
+font-size: 250%;
+padding: 33%;
+}
+        }
+
+
+       .slick-slide {
+        float: $left;
+        .grid figure img {
+    position: absolute;
+    display: block;
+    opacity: 1.0;
+    width: 180%;
+    max-width: 270%;
+    left: -51%;
+            }
+    }
+    }
+}
+
+
+
+
+
+
+//********************* slick slider style **************************//
+
+.slick-list {
+  float: $left;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+}
+
+.slick-slide {
+  float: $left;
+}
+
+
+.slick-track {
+  float: $left;
+  display: inline-block;
+
+}
+
+
+.slick-list {
+  width: 100%;
+  float: $right;
+  display: block;
+  .slick-slide {
+    float: $left;
+    figure {
+      border-radius: 0;
+    }
+  }
+
+}
+.slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  bottom:-380px;
+  top:auto;
+  list-style: none;
+  text-align: center;
+  z-index: 99;
+  float: $right;
+  li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border: 0 !important;
+    &:before {
+      display: none !important;
+    }
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: inline;
+      width: 3px;
+      height: 3px;
+      padding: 3px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: white;
+      border-radius: 50%;
+      @include transition("all 0.3s");
+    }
+  }
+  li.slick-active {
+    button {
+      width: 5px;
+      height: 5px;
+      padding: 5px;
+      @include transition("all 0.3s");
+      background: $color-def-two;
+    }
+
+
+  }
+}
+
+.CarouselWarpper {
+  height: 400px !important;
+}
+.slidertwoWarpper {
+  height: 300px ;
+}
+
+
+
+ul.blockCarousel {
+    list-style:none;
+  li.defier-first-post {
+              padding: 0;
+    top: 0;
+    margin: 0;
+    position: relative;
+    float: $left;
+    width: 25%;
+
+    .grid {
+
+    }
+
+  }
+
+}
+
+.featured-wrapper {
+  .sliderCarousel {
+        margin: 0;
+    height: 400px;
+    .meta-label {
+        top:25%;
+    }
+
+}
+}
+
+
+
+
+ .sliderSlickOne  {
+    .grid figure.effect-thumbDefier
+    {   img {
+                 @include phone {
+                     width: 180%;
+    height: 100%;
+         }
+
+}
+       .data-label {
+         @include phone {
+                 top: 16%;
+         }
+
+}
+     }
+
+ }
+
+
+
+
+.Full-width {
+    width:100%;
+    float:$left;
+}
+
+
+.grid figure.small-thumbDefier figcaption h2 a {
+font-size: 70%;
+}

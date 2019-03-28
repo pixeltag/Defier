@@ -1,0 +1,34 @@
+    $footer-c1w:#f2f2f2;
+    $footer-c2w:#1b1b1b;
+    $footer-3w:#cac9c9;
+    $footer-4w:#a0a0a0;
+    $footer-5w:#a9a9a9;
+
+
+        .socialMediaWrapper {
+            text-align: $right;
+            @include phone {
+                text-align: center;
+            }
+        }
+
+.lightFooter {
+  position: relative;
+  float: $left;
+width: 100%;
+margin-top:15px;
+.widget_categories {
+  ul {
+    height: 235px;
+    li.cat-item {
+      a {
+        margin-#{$left}:12%;
+        margin-#{$right}:auto;
+      }
+    }
+  }
+}
+
+
+/*** end of footer wreapper ******/
+}

@@ -1,0 +1,120 @@
+/**  color Var  **/
+$color-def-one-rgba:rgba(48,59,79,0.95);
+$color-def-one:#50668b;
+$color-def-two:#88b8ca;
+$color-def-three:#fafafa;
+$color-def-four:#686868;
+$color-def-five:#9f9f9f;
+$color-def-six:#b1d4e1;
+$color-def-se7en:#8396b5;
+
+/**  color general  **/
+
+$direction:ltr;
+$float-right:right;
+$float-left:left;
+$color-def-three:#fafafa;
+$color-def-four:#686868;
+$color-def-five:#9f9f9f;
+
+$left : left;
+$right:right;
+
+
+@mixin left($timedu) {
+  #{$left}: $timedu;
+}
+@mixin right($timedu) {
+  #{$right}: $timedu;
+}
+@mixin padding-right($num) {
+  padding-#{$right}: $num;
+}
+@mixin padding-left($num) {
+  padding-#{$left}: $num;
+}
+@mixin margin-left($num) {
+  margin-#{$left}: $num;
+}
+@mixin margin-right($num) {
+  margin-#{$right}: $num;
+}
+@mixin border-left($color) {
+  border-#{$left}: 1px solid $color;
+}
+@mixin border-right($color) {
+  border-#{$right}: 1px solid $color;
+}
+@mixin border-top($color) {
+  border-top: 1px solid $color;
+}
+@mixin border-bottom($color) {
+  border-bottom: 1px solid $color;
+}
+
+@import "sass/mixin.scss";
+@import "sass/_header.scss";
+@import "sass/_nav.scss";
+@import "sass/_slider.scss";
+@import "sass/_footer.scss";
+@import "sass/_footerw.scss";
+@import "sass/_componanet.scss";
+@import "sass/_block.scss";
+@import "sass/_layout.scss";
+@import "sass/_single.scss";
+@import "sass/_pages.scss";
+@import "sass/_shortcuts.scss";
+@import "sass/_common.scss";
+
+
+
+html , body {
+  height: 100%;
+
+}
+
+html, body, ul, ol {
+    @include padding(0);
+    @include margin(0);
+
+}
+
+
+.pointer:hover {
+  cursor: url(../images/cursor.png), auto !important;
+}
+
+
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body.overflow-hidden {
+  /* used when modal is visible */
+  overflow: hidden;
+}
+
+a {
+  color: $color-def-one;
+  text-decoration: none;
+  outline: none;
+  @include transition(all 0.3s ease);
+  &:hover {
+    color: $color-def-two;
+  }
+}
+
+.nopadding {
+  padding:0;
+}

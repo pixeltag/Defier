@@ -1,0 +1,138 @@
+    $footer-c1w:#f2f2f2;
+    $footer-c2w:#1b1b1b;
+    $footer-3w:#cac9c9;
+    $footer-4w:#a0a0a0;
+    $footer-5w:#a9a9a9;
+    
+    
+        .socialMediaWrapper {
+            text-align: $right;
+            @include phone {
+                text-align: center;
+            }
+        }
+
+.lightFooter {
+  position: relative;
+  float: $left;
+width: 100%;
+margin-top:15px;
+    .footer-bottom {
+    background: none repeat scroll 0 0 $footer-c1w;
+    color: $footer-c2w;
+            }
+        .footer-black {
+            background:$footer-c1w;
+            color: $footer-c2w;
+            .container {
+                border-bottom: 1px solid $footer-3w;
+            }
+        }
+
+
+        .socialMediaLabel {
+            color:$color-def-five;
+        }
+    
+    .defier-cat-title {
+               &:before {
+            background: $footer-4w;
+           }
+    h4.widget-title {
+            background: $footer-c1w;
+            color: lighten($footer-c2w,30%);
+      margin: 0;
+            &:first-letter {
+                color:$footer-c2w;
+           }
+
+
+
+    }
+}
+ul.footerMenu {
+  li {
+    a {
+        &:hover {
+            color:$footer-c2w;
+        }
+    }
+  }
+    
+    
+}
+
+.copyright {
+    color: $color-def-five;
+    div a {
+    color: $color-def-five;
+    &:hover {
+        color:$color-def-two;
+    }
+}
+}
+.no-border {
+    li {
+        border:0px solid $footer-c1w !important;
+}
+}
+
+.def_col_4 {
+    li {
+        border: 2px solid $footer-c1w;
+    }
+}
+
+.twitter-widget {
+  background: #e8e8e8;
+  .slick-slider {
+    span {
+      color:$footer-4w;
+      a {
+        color:#4e4e4e;
+      }
+    }
+  }
+  .twitterfootwrapper {
+    background:#dbdbdb ;
+      color: $footer-5w;
+      .fa-twitter {
+        color:#55adec;
+      }
+    }
+    .follow {
+      color:#55adec;
+    }
+  }
+
+
+
+
+
+.widget_categories {
+  ul {
+    height: 235px;
+    li.cat-item {
+      color: #929292;
+      background: #e8e8e8;
+      &:hover {
+        background: #dbdbdb;
+        a {
+          color:#fff;
+        }
+      }
+      &:before {
+        background: #dbdbdb;
+      }
+      a {
+        margin-#{$left}:12%;
+        margin-#{$right}:auto;
+        color:$footer-c2w;
+      }
+    }
+  }
+}
+
+
+/*** end of footer wreapper ******/
+}

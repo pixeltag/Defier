@@ -1,0 +1,117 @@
+
+/**  Mixin  **/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($trans1) {
+  -webkit-transition: $trans1;
+  -moz-transition: $trans1;
+  -ms-transition: $trans1;
+  transition: $trans1;
+}
+
+@mixin background($timedu) {
+  background: $timedu;
+}
+
+
+@mixin transform($num) {
+  -ms-transform: $num;; /* IE 9 */
+  -ms-transform-origin: 20% 40%; /* IE 9 */
+  -webkit-transform: $num; /* Chrome, Safari, Opera */
+  -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+  transform: $num;
+  transform-origin: 20% 40%;
+
+}
+
+@mixin margin($num) {
+  margin: $num;
+}
+
+@mixin padding($num) {
+  padding: $num;
+}
+
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin blur($num) {
+  -webkit-filter: blur($num);
+  -moz-filter: blur($num);
+  -o-filter: blur($num);
+  -ms-filter: blur($num);
+  filter: blur($num);
+}
+
+@mixin box-shadow($num) {
+  -webkit-box-shadow:  $num;
+  -moz-box-shadow:  $num;
+  -o-box-shadow:  $num;
+  -ms-box-shadow:  $num;
+  box-shadow: $num;
+}
+
+// media queries
+$S:     480px;
+$M:     768px;
+$L:     1170px;
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+}
+$phone-width: 320px;
+$tablet-width: 768px;
+$laptop-width: 1200px;
+$desktop-width: 1600px;
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+  @mixin retina {
+    @media screen
+    and (min-device-width: $laptop-width)
+    and (max-device-width: $desktop-width)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+      @content;
+    }
+  }
+
+
+
